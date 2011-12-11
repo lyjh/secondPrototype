@@ -1,0 +1,298 @@
+{
+	"Default Files":[
+		{"File Name":"00000000001",
+		 "Content":
+			 {
+			"Name":"Tutorial Stage 1",
+			"Description":"learn to play - How to play? Meet the Map and the Camera",
+			"Center Changeable":"true",
+			"CenterPoint X":"0.0",
+			"CenterPoint Y":"0.0",
+			"Location List":[
+							{"Name":"point 1",
+							 "Order":"-1",
+							 "Position X":"10",
+							 "Position Y":"10",
+							 "Story":"This is the first point !!",
+							 "Events":[
+							 	{"Require Item":"NULL",
+						 		 "Require No Item":"NULL",
+						 		 "Get Item":"My Compass",
+						 		 "Message Positive":"Hello world!",
+						 		 "Message Negative":"",
+						 		 "Next Point":"point 2"},
+						 		 {"Require Item":"NULL",
+						 		 "Require No Item":"NULL",
+						 		 "Get Item":"NULL",
+						 		 "Message Positive":"Hello world again !",
+						 		 "Message Negative":"",
+						 		 "Next Point":"NULL"}
+						 		 ]
+						 	 },
+						 	 {"Name":"point 2",
+							 "Order":"-1",
+							 "Position X":"5",
+							 "Position Y":"-5",
+							 "Story":"This is the next point !!",
+							 "Events":[
+							 	{"Require Item":"My Compass",
+						 		 "Require No Item":"NULL",
+						 		 "Get Item":"NULL",
+						 		 "Message Positive":"You have Compass",
+						 		 "Message Negative":"Sorry No Compass",
+						 		 "Next Point":"NULL"}
+							 	]
+							 }
+							 ],
+			"Item List":[
+					{"Name":"My Compass",
+					 "Description":"a test compass",
+					 "Icon":"compass"}
+					]						 
+			}
+		},
+		 
+		{"File Name":"00000000002",
+		 "Content":
+			 {
+			"Name":"Tutorial Stage 2",
+			"Description":"learn to play - Can't you see? walk around !",
+			"Center Changeable":"true",
+			"CenterPoint X":"0.0",
+			"CenterPoint Y":"0.0",
+			"Location List":[
+							{"Name":"point 1",
+							 "Order":"-1",
+							 "Position X":"10",
+							 "Position Y":"10",
+							 "Story":"This is the first point !!",
+							 "Events":[
+							 	{"Require Item":"NULL",
+						 		 "Require No Item":"NULL",
+						 		 "Get Item":"NULL",
+						 		 "Message Positive":"Hello world!",
+						 		 "Message Negative":"",
+						 		 "Next Point":"point 2"}
+						 		 ]
+						 	 },
+						 	 {"Name":"point 2",
+							 "Order":"-1",
+							 "Position X":"50",
+							 "Position Y":"-50",
+							 "Story":"This is the first point !!",
+							 "Events":[
+							 	{"Require Item":"NULL",
+						 		 "Require No Item":"NULL",
+						 		 "Get Item":"NULL",
+						 		 "Message Positive":"Hello world!",
+						 		 "Message Negative":"",
+						 		 "Next Point":"point 3"}
+						 		 ]
+						 	 },
+						 	 {"Name":"point 3",
+							 "Order":"-1",
+							 "Position X":"-35",
+							 "Position Y":"3",
+							 "Story":"This is the next point !!",
+							 "Events":[
+							 	{"Require Item":"NULL",
+						 		 "Require No Item":"NULL",
+						 		 "Get Item":"NULL",
+						 		 "Message Positive":"Hello world!!",
+						 		 "Message Negative":"",
+						 		 "Next Point":"NULL"}
+							 	]
+							 },
+							 {"Name":"point 4",
+							 "Order":"-1",
+							 "Position X":"-50",
+							 "Position Y":"-50",
+							 "Story":"This is the first point !!",
+							 "Events":[
+							 	{"Require Item":"NULL",
+						 		 "Require No Item":"NULL",
+						 		 "Get Item":"NULL",
+						 		 "Message Positive":"Hello world!",
+						 		 "Message Negative":"",
+						 		 "Next Point":"NULL"}
+						 		 ]
+						 	 },
+						 	 {"Name":"point 5",
+							 "Order":"-1",
+							 "Position X":"-50",
+							 "Position Y":"0",
+							 "Story":"This is the first point !!",
+							 "Events":[
+							 	{"Require Item":"NULL",
+						 		 "Require No Item":"NULL",
+						 		 "Get Item":"NULL",
+						 		 "Message Positive":"Hello world!",
+						 		 "Message Negative":"",
+						 		 "Next Point":"NULL"}
+						 		 ]
+						 	 }
+							 ],
+				"Item List":[]		
+			}
+		},
+		 
+		{"File Name":"00000000003",
+		 "Content":
+			 {
+			"Name":"Tutorial Stage 3",
+			"Description":"learn to play - Where to go? Some points are hidden !",
+			"Center Changeable":"true",
+			"CenterPoint X":"0.0",
+			"CenterPoint Y":"0.0",
+			"Location List":[
+							{"Name":"point 1",
+							 "Order":"-1",
+							 "Position X":"10",
+							 "Position Y":"10",
+							 "Story":"This is the first point !!",
+							 "Events":[
+							 	{"Require Item":"NULL",
+						 		 "Require No Item":"NULL",
+						 		 "Get Item":"NULL",
+						 		 "Message Positive":"Hello world!",
+						 		 "Message Negative":"",
+						 		 "Next Point":"point 2"}
+						 		 ]
+						 	 },
+						 	 {"Name":"point 2",
+							 "Order":"-1",
+							 "Position X":"5",
+							 "Position Y":"-5",
+							 "Story":"This is the next point !!",
+							 "Events":[
+							 	{"Require Item":"NULL",
+						 		 "Require No Item":"NULL",
+						 		 "Get Item":"NULL",
+						 		 "Message Positive":"Hello world!!",
+						 		 "Message Negative":"",
+						 		 "Next Point":"NULL"}
+							 	]
+							 }
+							 ],
+			"Item List":[]	
+			}
+		},
+		 
+		{"File Name":"00000000004",
+		 "Content":
+			 {
+			"Name":"Tutorial Stage 4",
+			"Description":"learn to play - Need something? Check out your items !",
+			"Center Changeable":"true",
+			"CenterPoint X":"0.0",
+			"CenterPoint Y":"0.0",
+			"Location List":[
+							{"Name":"point 1",
+							 "Order":"-1",
+							 "Position X":"10",
+							 "Position Y":"10",
+							 "Story":"This is the first point !!",
+							 "Events":[
+							 	{"Require Item":"NULL",
+						 		 "Require No Item":"My Bomb",
+						 		 "Get Item":"My Bomb",
+						 		 "Message Positive":"You've got BOMB!!",
+						 		 "Message Negative":"You already have My Bomb",
+						 		 "Next Point":"point 2"}
+						 		 ]
+						 	 },
+						 	 {"Name":"point 2",
+							 "Order":"-1",
+							 "Position X":"5",
+							 "Position Y":"-5",
+							 "Story":"This is the next point !!",
+							 "Events":[
+							 	{"Require Item":"My Bomb",
+						 		 "Require No Item":"My Bat",
+						 		 "Get Item":"My Bat",
+						 		 "Message Positive":"You've got BAT!!",
+						 		 "Message Negative":"Sorry, you don't have My Bomb\nOr you already have My Bat",
+						 		 "Next Point":"point 3"}
+							 	]
+							 },
+							 {"Name":"point 3",
+							 "Order":"-1",
+							 "Position X":"-6",
+							 "Position Y":"-8",
+							 "Story":"This is the last point !!",
+							 "Events":[
+							 	{"Require Item":"My Bat",
+						 		 "Require No Item":"NULL",
+						 		 "Get Item":"My Torch",
+						 		 "Message Positive":"You've got TORCH!!",
+						 		 "Message Negative":"Sorry, you don't have My Bat\nOr you already have My Torch",
+						 		 "Next Point":"NULL"}
+							 	]
+							 }
+							 ],
+			"Item List":[{"Name":"My Compass",
+					 "Description":"Very accurate compass",
+					 "Icon":"compass"}, {"Name":"My Torch",
+					 "Description":"Very bright torch",
+					 "Icon":"torch"}, {"Name":"My Bomb",
+					 "Description":"Very dangerous bomb",
+					 "Icon":"bomb"}, {"Name":"My Gun",
+					 "Description":"Very destructive gun",
+					 "Icon":"gun"}, {"Name":"My Bat",
+					 "Description":"Very hard bat",
+					 "Icon":"bat"}]	
+			}
+		}
+		],
+	
+	"Default List":[
+		{
+		 "ID":"00000000001"},
+		{
+		 "ID":"00000000002"},
+ 		{
+		 "ID":"00000000003"},
+		{
+		 "ID":"00000000004"}
+		],
+		
+	"Template":{
+		"Name":"name",
+		"Description":"description",
+		"Center Changeable":"true",
+		"CenterPoint X":"0.0",
+		"CenterPoint Y":"0.0",
+		"Visible Range":"30",
+		"Location List":[
+						{"Name":"point 1",
+						 "Position X":"100",
+						 "Position Y":"100",
+						 "Order":"-1",
+						 "Story":"story goes here",
+						 "Image":"path or name",
+						 "Movie":"path or name",
+						 "Events":[
+						 		{"Require Item":"NULL",
+						 		 "Require No Item":"NULL",
+						 		 "Get Item":"NULL",
+						 		 "Message Positive":"Good",
+						 		 "Message Negative":"Not Good",
+						 		 "Next Point":"point 2"},
+						 		{"Require Item":"Box",
+						 		 "Require No Item":"Big box",
+						 		 "Get Item":"Big box",
+						 		 "Message Positive":"Good",
+						 		 "Message Negative":"Not Good",
+						 		 "Next Point":"point 2"}
+						 			]
+						 }],
+		"Item List":[
+					{"Name":"Box",
+					 "Description":"a small box",
+					 "Icon":"Default"},
+					{"Name":"Big box",
+					 "Description":"a big box",
+					 "Icon":"Default"}
+					]
+	}
+}
