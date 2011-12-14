@@ -13,7 +13,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import second.prototype.ContainerBox;
-
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.util.Log;
