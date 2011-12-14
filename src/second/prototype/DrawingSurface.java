@@ -27,6 +27,7 @@ import android.view.SurfaceHolder;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
@@ -292,8 +293,10 @@ public class DrawingSurface extends android.view.SurfaceView implements
 		LayoutInflater infla = LayoutInflater.from(owner);
 		eventView = infla.inflate(R.layout.eventdialog, null);
 		builder.setView(eventView);
+		final AlertDialog alertDialog = builder.create();
 		
 		ListView messageList = (ListView) eventView.findViewById(R.id.event);
+		Button backBtn = (Button) eventView.findViewById(R.id.return_btn);
 		messageList.setBackgroundColor(Color.BLACK);
 		
 		num = 1;
@@ -314,17 +317,26 @@ public class DrawingSurface extends android.view.SurfaceView implements
 			}
 			
 		});
-		
-		builder.setNegativeButton("Finish", new DialogInterface.OnClickListener() {
+		backBtn.setOnClickListener(new Button.OnClickListener(){
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				alertDialog.dismiss();
+				touched = false;
+			}
+			
+		});
+		/*builder.setNegativeButton("Finish", new DialogInterface.OnClickListener() {
 			
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
 				// TODO Auto-generated method stub
 				touched = false;
 			}
-		});
+		});*/
 		
-		builder.show();
+		alertDialog.show();
 	}
 	
 	private void putMessageTo(int top,String name) {

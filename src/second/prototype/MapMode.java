@@ -139,6 +139,7 @@ public class MapMode extends Activity {
 					// TODO Auto-generated method stub
 					myX = (float)location.getLongitude() - stage.getMapCenter("X");
 					myY = (float)location.getLatitude() - stage.getMapCenter("Y");
+					Log.d("GPS something", location.getLongitude()+", "+location.getLatitude());
 					
 					myX = myX*ContainerBox.deg_index;
 					myY = myY*ContainerBox.deg_index;
@@ -243,9 +244,17 @@ public class MapMode extends Activity {
 	
 	private void setCurrentPointCenter() {
 		float nowX,nowY;
-		nowX = (float) locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER).getLongitude();
-		nowY = (float) locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER).getLatitude();
+		Location loc = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+		if(loc!=null){
+			nowX = (float) loc.getLongitude();
+			nowY = (float) loc.getLatitude();
+		} else {
+			Log.e("GPS something","last known location not found");
+			nowX = (float) 0.0;
+			nowY = (float) 0.0;
+		}
 		
+		Toast.makeText(MapMode.this, "Current position = "+nowX+", "+nowY, Toast.LENGTH_SHORT).show();
 		stage.setMapCenter(nowX, nowY);
 		mapView.setCurrentLocation(0, 0);
 	}

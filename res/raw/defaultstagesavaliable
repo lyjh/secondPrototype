@@ -11,8 +11,8 @@
 			"Location List":[
 							{"Name":"point 1",
 							 "Order":"-1",
-							 "Position X":"10",
-							 "Position Y":"10",
+							 "Position X":"18",
+							 "Position Y":"0",
 							 "Story":"This is the first point !!",
 							 "Events":[
 							 	{"Require Item":"NULL",
@@ -31,8 +31,8 @@
 						 	 },
 						 	 {"Name":"point 2",
 							 "Order":"-1",
-							 "Position X":"5",
-							 "Position Y":"-5",
+							 "Position X":"0",
+							 "Position Y":"-17",
 							 "Story":"This is the next point !!",
 							 "Events":[
 							 	{"Require Item":"My Compass",
@@ -187,7 +187,7 @@
 			"CenterPoint X":"0.0",
 			"CenterPoint Y":"0.0",
 			"Location List":[
-							{"Name":"point 1",
+							{"Name":"第一點",
 							 "Order":"-1",
 							 "Position X":"10",
 							 "Position Y":"10",
@@ -198,10 +198,10 @@
 						 		 "Get Item":"My Bomb",
 						 		 "Message Positive":"You've got BOMB!!",
 						 		 "Message Negative":"You already have My Bomb",
-						 		 "Next Point":"point 2"}
+						 		 "Next Point":"第二點"}
 						 		 ]
 						 	 },
-						 	 {"Name":"point 2",
+						 	 {"Name":"第二點",
 							 "Order":"-1",
 							 "Position X":"5",
 							 "Position Y":"-5",
@@ -212,20 +212,6 @@
 						 		 "Get Item":"My Bat",
 						 		 "Message Positive":"You've got BAT!!",
 						 		 "Message Negative":"Sorry, you don't have My Bomb\nOr you already have My Bat",
-						 		 "Next Point":"point 3"}
-							 	]
-							 },
-							 {"Name":"point 3",
-							 "Order":"-1",
-							 "Position X":"-6",
-							 "Position Y":"-8",
-							 "Story":"This is the last point !!",
-							 "Events":[
-							 	{"Require Item":"My Bat",
-						 		 "Require No Item":"NULL",
-						 		 "Get Item":"My Torch",
-						 		 "Message Positive":"You've got TORCH!!",
-						 		 "Message Negative":"Sorry, you don't have My Bat\nOr you already have My Torch",
 						 		 "Next Point":"NULL"}
 							 	]
 							 }

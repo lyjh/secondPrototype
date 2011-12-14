@@ -17,6 +17,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.SimpleAdapter;
@@ -28,6 +29,7 @@ public class ItemSystem extends Activity {
     private ImageView image;
     private ArrayList<HashMap<String, Object>> listItem = new ArrayList<HashMap<String, Object>>();
     private SimpleAdapter adapter;
+    private AlertDialog alertDialog;
     
     // for construction purpose
     private Backpack backpack = ContainerBox.backback;
@@ -71,46 +73,41 @@ public class ItemSystem extends Activity {
         final View textEntryView = inflater.inflate(R.layout.item_dialogue, null);  
         ImageView itemIcon = (ImageView) textEntryView.findViewById(R.id.itemIcon);
         TextView itemDescription = (TextView) textEntryView.findViewById(R.id.itemDescript);
+        Button throwBtn = (Button) textEntryView.findViewById(R.id.throw_btn);
         final AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setCancelable(false);
         builder.setView(textEntryView);
+        alertDialog = builder.create();
         
         itemIcon.setImageResource(item.getImage());
         itemDescription.setText(item.hasItem()?item.getDescript():"?????");
+        throwBtn.setBackgroundResource(R.drawable.delete);
+        if(!item.hasItem())
+        	throwBtn.setVisibility(View.INVISIBLE);
         
-        if(item.hasItem()) {
-	        builder.setPositiveButton("Throw", new DialogInterface.OnClickListener() {
-				
-				@Override
-				public void onClick(DialogInterface dialog, int which) {
-					// TODO Auto-generated method stub
-					AlertDialog.Builder builder2 = new AlertDialog.Builder(ItemSystem.this);
-					builder2.setMessage("Are you sure you want to throw the item?")
-					       .setCancelable(false)
-					       .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-					           public void onClick(DialogInterface dialog, int id) {
-					               item.throwItem();
-					               changeView();
-					           }
-					       })
-					       .setNegativeButton("No", new DialogInterface.OnClickListener() {
-					           public void onClick(DialogInterface dialog, int id) {
-					                dialog.cancel();
-					           }
-					       });
-					builder2.show();
-				}
-			});
-        }
-        builder.setNegativeButton("Back", new DialogInterface.OnClickListener() {
-			
+        throwBtn.setOnClickListener(new Button.OnClickListener(){
+
 			@Override
-			public void onClick(DialogInterface dialog, int which) {
+			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				
+				AlertDialog.Builder builder2 = new AlertDialog.Builder(ItemSystem.this);
+				builder2.setMessage("Are you sure you want to throw the item?")
+				       .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+				           public void onClick(DialogInterface dialog, int id) {
+				               item.throwItem();
+				               alertDialog.dismiss();
+				               changeView();
+				           }
+				       })
+				       .setNegativeButton("No", new DialogInterface.OnClickListener() {
+				           public void onClick(DialogInterface dialog, int id) {
+				        	   
+				           }
+				       });
+				builder2.show();
 			}
-		});
-        builder.show();
+        	
+        });
+        alertDialog.show();
 	}
 
 	protected void changeView() {
