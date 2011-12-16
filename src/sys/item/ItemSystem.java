@@ -11,6 +11,7 @@ import second.prototype.R;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -26,10 +27,11 @@ import android.widget.TextView;
 public class ItemSystem extends Activity {
     
 	private GridView grid;
-    private ImageView image;
+    //private ImageView image;
     private ArrayList<HashMap<String, Object>> listItem = new ArrayList<HashMap<String, Object>>();
     private SimpleAdapter adapter;
     private AlertDialog alertDialog;
+    private TextView text1,text2,text3,text4,text5,text6,text7,text8;
     
     // for construction purpose
     private Backpack backpack = ContainerBox.backback;
@@ -44,7 +46,25 @@ public class ItemSystem extends Activity {
         setContentView(R.layout.main);
         
         grid = (GridView) findViewById(R.id.gridView1);
-        image = (ImageView) findViewById(R.id.imageView1);
+      
+        text1 = (TextView) findViewById(R.id.textView4);
+        text2 = (TextView) findViewById(R.id.textView5);
+        text3 = (TextView) findViewById(R.id.textView6);
+        text4 = (TextView) findViewById(R.id.textView7);
+        text5 = (TextView) findViewById(R.id.textView8);
+        text6 = (TextView) findViewById(R.id.textView9);
+        text7 = (TextView) findViewById(R.id.textView10);
+        text8 = (TextView) findViewById(R.id.textView11);
+
+        Typeface font = Typeface.createFromAsset(getAssets(), "fonts/font3.ttf");
+        text1.setTypeface(font);
+        text2.setTypeface(font);
+        text3.setTypeface(font);
+        text4.setTypeface(font);
+        text5.setTypeface(font);
+        text6.setTypeface(font);
+        text7.setTypeface(font);
+        text8.setTypeface(font);
 
         
         adapter = new SimpleAdapter(this, listItem, R.layout.grid_item,
@@ -122,7 +142,7 @@ public class ItemSystem extends Activity {
     		listItem.add(map);
     		adapter.notifyDataSetChanged();
         }
-        image.setImageResource(R.drawable.bag);
+        //image.setImageResource(R.drawable.bag);
     }
 	
 	/*********************************************************/

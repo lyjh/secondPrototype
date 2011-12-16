@@ -11,6 +11,7 @@ public final class R {
     public static final class attr {
     }
     public static final class color {
+        public static final int darkred=0x7f050006;
         public static final int grass=0x7f050000;
         public static final int orange=0x7f050001;
         public static final int pointbg=0x7f050004;
@@ -257,33 +258,41 @@ public final class R {
         public static final int witchhat_silhouette=0x7f0200eb;
     }
     public static final class id {
-        public static final int Description=0x7f080016;
-        public static final int Name=0x7f080015;
+        public static final int Description=0x7f08001e;
+        public static final int Name=0x7f08001d;
         public static final int ShowDescription=0x7f08000d;
         public static final int ShowID=0x7f08000c;
         public static final int ShowName=0x7f08000e;
         public static final int back=0x7f080004;
-        public static final int button3=0x7f080019;
-        public static final int button4=0x7f08001a;
+        public static final int button3=0x7f080021;
+        public static final int button4=0x7f080022;
         public static final int event=0x7f080005;
-        public static final int gridView1=0x7f080010;
+        public static final int gridView1=0x7f080018;
         public static final int imageView1=0x7f080002;
         public static final int itemDescript=0x7f08000a;
         public static final int itemIcon=0x7f080009;
         public static final int itemImage=0x7f080008;
         public static final int linearLayout1=0x7f080001;
         public static final int linearLayout2=0x7f08000f;
-        public static final int listView=0x7f080012;
-        public static final int mapView=0x7f080011;
+        public static final int listView=0x7f08001a;
+        public static final int mapView=0x7f080019;
         public static final int onLinelist=0x7f080000;
-        public static final int play=0x7f080018;
-        public static final int pointLocation=0x7f080014;
-        public static final int pointName=0x7f080013;
+        public static final int play=0x7f080020;
+        public static final int pointLocation=0x7f08001c;
+        public static final int pointName=0x7f08001b;
         public static final int refresh=0x7f080003;
         public static final int relativeLayout1=0x7f080007;
         public static final int return_btn=0x7f080006;
-        public static final int stagelist=0x7f080017;
-        public static final int story=0x7f08001b;
+        public static final int stagelist=0x7f08001f;
+        public static final int story=0x7f080023;
+        public static final int textView10=0x7f080016;
+        public static final int textView11=0x7f080017;
+        public static final int textView4=0x7f080010;
+        public static final int textView5=0x7f080011;
+        public static final int textView6=0x7f080012;
+        public static final int textView7=0x7f080013;
+        public static final int textView8=0x7f080014;
+        public static final int textView9=0x7f080015;
         public static final int throw_btn=0x7f08000b;
     }
     public static final class layout {
