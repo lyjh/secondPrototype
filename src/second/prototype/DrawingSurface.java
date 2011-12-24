@@ -322,6 +322,10 @@ public class DrawingSurface extends android.view.SurfaceView implements
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
+				if(!stage.getPointOf(which).hasVisited) {
+					stage.getPointOf(which).hasVisited = true;
+					stage.updateProgress();
+				}	
 				alertDialog.dismiss();
 				touched = false;
 			}
